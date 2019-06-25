@@ -1,12 +1,8 @@
-# MCAS Cloud App Search
+# Universal Teams Messaging Extension
 
-Generate a Microsoft Teams application.
+This application illustrates how to create a Microsoft Teams messaging extension using a data-driven approach.
 
-TODO: Add your documentation here
-
-## Getting started with Microsoft Teams Apps development
-
-Head on over to [official documentation](https://msdn.microsoft.com/en-us/microsoft-teams/tabs) to learn how to build Microsoft Teams Tabs.
+TODO: Add more documentation.
 
 ## Building the app
 
