@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Generate a Microsoft Teams application.",
   "scripts": {
-    "start": "cd ./dist && node server.js",
+    "start": "node server.js",
     "build": "gulp build",
     "debug": "gulp serve --debug",
     "test": "jest",
