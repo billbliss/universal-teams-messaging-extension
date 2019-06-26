@@ -1,0 +1,102 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.4/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.4",
+  "id": "af6e7a52-c2e5-4ca1-a73f-6e148cc8d3ca",
+  "version": "0.0.1",
+  "packageName": "seeker",
+  "developer": {
+    "name": "Bill Bliss",
+    "websiteUrl": "https://mcas.ngrok.io",
+    "privacyUrl": "https://mcas.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://mcas.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "Seeker",
+    "full": "Multi-faceted messaging extension for a variety of online databases."
+  },
+  "description": {
+    "short": "Search for information in online databases to enhance your messages.",
+    "full": "Search for information in a variety of online databases to enhance your messages. Icons made by https://www.flaticon.com/authors/smashicons from https://www.flaticon.com/ is licensed by http://creativecommons.org/licenses/by/3.0/ (Creative Commons BY 3.0 BY)."
+  },
+  "icons": {
+    "outline": "cloud-search-outline.png",
+    "color": "cloud-search.png"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "af6e7a52-c2e5-4ca1-a73f-6e148cc8d3ca",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "mcas",
+          "title": "MCAS",
+          "description": "Enter the name of an app to search for. For example, \"adobe\" to find apps from Adobe.",
+          "initialRun": false,
+          "parameters": [
+            {
+              "name": "app",
+              "description": "App name",
+              "title": "App name"
+            }
+          ],
+          "type": "query"
+        },
+        {
+          "id": "wikipedia",
+          "title": "Wikipedia",
+          "description": "Search for matching Wikipedia articles.",
+          "initialRun": false,
+          "parameters": [
+            {
+              "name": "search",
+              "description": "Wikipedia article",
+              "title": "Wikipedia article"
+            }
+          ],
+          "type": "query"
+        },
+        {
+          "id": "crunchbaseOrgs",
+          "title": "Crunchbase",
+          "description": "Search for matching companies on Crunchbase. For example, \"uber\" to find Uber and companies related to Uber.",
+          "initialRun": false,
+          "parameters": [
+            {
+              "name": "search",
+              "description": "Company name",
+              "title": "Company name"
+            }
+          ],
+          "type": "query"
+        },
+        {
+          "id": "crunchbasePeople",
+          "title": "Crunchbase People",
+          "description": "Search for people on Crunchbase. For example, \"uber\" to find people associated with Uber, or \"mary\" to people named Mary.",
+          "initialRun": false,
+          "parameters": [
+            {
+              "name": "search",
+              "description": "Name or company",
+              "title": "Name or company"
+            }
+          ],
+          "type": "query"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "mcas.ngrok.io",
+    "mcasmsgext.azurewebsites.net"
+  ]
+}

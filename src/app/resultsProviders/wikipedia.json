@@ -1,0 +1,21 @@
+{
+    "endPoint": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={{query}}&format=json&srlimit={{limit}}&sroffset={{offset}}",
+    "countParam": "limit",
+    "skipParam": "offset",
+    "httpMethod": "GET",
+    "resultsPath": "$.query.search[*]",
+    "template": "imageCard",
+    "imagesType": "lookup",
+    "imageIdsPath": "$[*].title",
+    "imageIdUrl": "",
+    "imageIdPath": "title",
+    "imageEndPoint": "https://en.wikipedia.org/w/api.php?action=query&formatversion=2&format=json&prop=pageimages&piprop=thumbnail&pithumbsize=300&titles={{id}}",
+    "imageUrlPath": "query.pages[0].thumbnail.source",
+    "imageDefault": "https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia_Logo_1.0.png",
+    "titlePath": "title",
+    "descriptionPath": "snippet",
+    "descriptionFormat": "html",
+    "descriptionSuffix": "...",
+    "detailsUrlPath": "title",
+    "detailsUrlTemplate": "https://en.wikipedia.org/wiki/${id}"
+}

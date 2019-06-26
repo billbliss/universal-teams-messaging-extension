@@ -1,0 +1,30 @@
+{
+    "endPoint": "https://appattestationprd.us3.portal.cloudappsecurity.com/cas/api/v1/discovery/app_catalog/",
+    "countParam": "limit",
+    "skipParam": "skip",
+    "apiKey": "${MCAS_API_KEY}",
+    "apiKeyPrefix": "Token ",
+    "httpMethod": "POST",
+    "httpBodyTemplate": {"skip":"{{skip}}","limit":"{{limit}}","filters":{"text":{"contains":[{"searchType":1,"adv":false},"{{query}}"]}},"sortField":"score","sortDirection":"desc","performAsyncTotal":true},
+    "resultsPath": "$.data[*]",
+    "imagesType": "indirect",
+    "imageIdsPath": "$[*].appId",
+    "imageIdPath": "appId",
+    "imageIdUrl": "https://adaproddiscovery.azureedge.net/saas-images-logos/${id}_logo.png",
+    "imageUrlPath": "",
+    "imagesEndpoint": "",
+    "titlePath": "name",
+    "descriptionPath": "description",
+    "detailsUrlPath": "domainList[0]",
+    "detailsUrlTemplate": "https://${id}",
+    "facts": [ 
+        { "label": "MCAS ID", "path": "appId" },
+        { "label": "AAD AppId", "path": "aadAppId" },
+        { "label": "Partner", "path": "organization" },
+        { "label": "CSA STAR", "path": "compliance.CSAStar" },
+        { "label": "TOS", "path": "service.termsOfService", "format": "url" },
+        { "label": "Privacy", "path": "service.privacyPolicy", "format": "url" },
+        { "label": "GDPR", "path": "service.gdprLink", "format": "url" },
+        { "label": "Hosting", "path": "hosting.companyName" }
+    ]
+}

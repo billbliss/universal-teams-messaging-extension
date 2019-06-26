@@ -1,0 +1,28 @@
+{
+    "endPoint": "https://crunchbase-crunchbase-v1.p.rapidapi.com/odm-organizations?query={{query}}",
+    "headers": {
+        "X-RapidAPI-Host": "crunchbase-crunchbase-v1.p.rapidapi.com",
+        "X-RapidAPI-Key": "${RAPID_API_KEY}"
+    },
+    "httpMethod": "GET",
+    "resultsPath": "$.data.items[*]",
+    "imagesType": "inline",
+    "imageUrlPath": "properties.profile_image_url",
+    "titlePath": "properties.name",
+    "descriptionPath": "properties.short_description",
+    "detailsUrlPath": "properties.web_path",
+    "detailsUrlTemplate": "https://crunchbase.com/${id}",
+    "facts": [ 
+        { "label": "Domain", "path": "domain" },
+        { "label": "Homepage", "path": "properties.homepage_url", "format": "url" },
+        { "label": "Stock exchange", "path": "properties.stock_exchange" },
+        { "label": "Stock symbol", "path": "properties.stock_symbol" },
+        { "label": "Facebook", "path": "properties.facebook_url", "format": "url" },
+        { "label": "Twitter", "path": "properties.twitter_url", "format": "url" },
+        { "label": "LinkedIn", "path": "properties.linkedin_url", "format": "url" },
+        { "label": "City", "path": "properties.city_name" },
+        { "label": "State/Region", "path": "properties.region_name" },
+        { "label": "Country", "path": "properties.country_code" },
+        { "label": "Last updated", "path": "properties.updated_at", "format": "unixtimestamp" }
+    ]
+}
