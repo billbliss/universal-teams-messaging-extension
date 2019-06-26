@@ -20,9 +20,6 @@ To create the Microsoft Teams Apps manifest, run the `manifest` Gulp task. This 
 ``` bash
 gulp manifest
 ```
-## Working with the devPreview manifest version
-
-You can change the manifest version from the standard `1.3` to `devPreview` by editing the `manifest.json` file and the `manifestVersion` property. The schema validation currently supports `1.3` and `devPreview`, for other options you need to manually edit the `gulpfile.js` file and add the version and schema in the `SCHEMAS` constant. When validating the manifest you will get an error if any other versions are used and you will also get a warning if you have not manually updated the schema reference in the `manifest.json` file (which is recommended for in-editor schema validation).
 
 ## Configuration
 
@@ -42,7 +39,13 @@ To debug the code you can append the argument `debug` to the `serve` command as 
 gulp serve --debug
 ```
 
-To step through code in Visual Studio Code you need to add the following snippet in the `./.vscode/launch.json` file. Once done, you can easily attach to the node process after running the `gulp serve --debug` command.
+Note: if you are using Node 10.0 or later, the syntax is slightly different:
+
+``` bash
+gulp serve --inspect
+```
+
+To step through code in Visual Studio Code you need to add the following snippet in the `./.vscode/launch.json` file. Once done, you can easily attach to the node process after running the `gulp serve --debug` or `gulp serve --inspect` command.
 
 ``` json
 {
