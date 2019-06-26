@@ -1,9 +1,9 @@
 {
-  "name": "mcasmsgext",
-  "version": "0.0.1",
-  "description": "Generate a Microsoft Teams application.",
+  "name": "universal-teams-messaging-extension",
+  "version": "0.0.5",
+  "description": "A data-driven approach for Microsoft Teams messaging extensions.",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./dist/server.js",
     "build": "gulp build",
     "debug": "gulp serve --debug",
     "test": "jest",
