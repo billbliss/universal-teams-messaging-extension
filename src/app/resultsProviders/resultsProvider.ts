@@ -66,8 +66,13 @@ export class ResultsProvider {
         }
     }
 
-    // Helper function to generate a string date from a Unix timestamp
-    private unixTimestampAsDateString(unixTimestamp) {
+    // Helper function to allow unit tests to check provider values
+    public getProviderValue(property: string): any {
+        return this._currentProvider[property];
+    }
+
+    // Helper function to generate a string date from a Unix timestamp - $TODO make private again once unit tests for sample payloads are finished
+    public unixTimestampAsDateString(unixTimestamp) {
         const dateFormat = {
             year: "numeric",
             month: "long",
@@ -108,7 +113,7 @@ export class ResultsProvider {
         }
 
         if (this._currentProvider.apiKey !== undefined) {
-            let authHeader = { Authorization: `${this._currentProvider.apiKeyPrefix}${this._currentProvider.apiKey}` };
+            let authHeader = { Authorization: `${this._currentProvider.apiKey}` };
             requestOptions.headers = {...authHeader};
             // $TODO - investigate other types of auth patterns (and no auth at all)
         }

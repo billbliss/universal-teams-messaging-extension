@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchMessageExtensionConfig Component should match the snapshot 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "colors": Object {
+        "avatars": Object {
+          "avatar1": "#B3DBF2",
+          "avatar10": "#E6808A",
+          "avatar11": "#EE9889",
+          "avatar2": "#A7CFE8",
+          "avatar3": "#64A2CC",
+          "avatar4": "#62CCDD",
+          "avatar5": "#92E0EA",
+          "avatar6": "#ABDDD3",
+          "avatar7": "#D8E27D",
+          "avatar8": "#F7B189",
+          "avatar9": "#EF6950",
+        },
+        "dark": Object {
+          "bar": "#3B3A3A",
+          "black": "#201F1F",
+          "brand00": "#6264A7",
+          "brand00Light": "#6264A7",
+          "brand00SemiTransparent": "#7174AA",
+          "brand02": "#E2E2F6",
+          "brand04": "#BDBDE6",
+          "brand06": "#A6A7DC",
+          "brand08": "#8B8CC7",
+          "brand12": "#6264A7",
+          "brand14": "#464775",
+          "brand16": "#33344A",
+          "gray02": "#c7c6c6",
+          "gray03": "#b1b0b0",
+          "gray04": "#8f8f8f",
+          "gray06": "#636262",
+          "gray08": "#414040",
+          "gray10": "#2d2c2c",
+          "gray12": "#2b2a2a",
+          "gray13": "#313136",
+          "gray14": "#292828",
+          "green": "#92C353",
+          "magenta": "#CF6098",
+          "orange": "#E97548",
+          "orange04": "#CC4A31",
+          "orchid": "#AE3D84",
+          "red": "#D74654",
+          "red02": "#8E192E",
+          "red04": "#A72037",
+          "red06": "#C4314B",
+          "red08": "#4F232B",
+          "white": "#FFFFFF",
+          "yellow": "#F8D22A",
+        },
+        "highContrast": Object {
+          "black": "#000000",
+          "blue": "#00EBFF",
+          "green": "#30F42C",
+          "white": "#FFFFFF",
+          "yellow": "#FFFF00",
+        },
+        "light": Object {
+          "bar": "#33344A",
+          "black": "#252424",
+          "brand00": "#6264A7",
+          "brand00Dark": "#6264A7",
+          "brand00SemiTransparent": "#9496CA",
+          "brand02": "#33344A",
+          "brand04": "#464775",
+          "brand06": "#6264A7",
+          "brand08": "#8B8CC7",
+          "brand12": "#BDBDE6",
+          "brand14": "#E2E2F6",
+          "brand16": "#F4F4FC",
+          "gray01": "#4E586A",
+          "gray02": "#5c5b5b",
+          "gray03": "#717070",
+          "gray04": "#929191",
+          "gray06": "#bdbdbd",
+          "gray08": "#dfdede",
+          "gray10": "#F3F2F1",
+          "gray12": "#f4f4f4",
+          "gray13": "#F8F8F9",
+          "gray14": "#F9F8F7",
+          "green": "#92C353",
+          "magenta": "#B24782",
+          "orange": "#E97548",
+          "orange04": "#CC4A31",
+          "orchid": "#943670",
+          "red": "#C4314B",
+          "red02": "#8E192E",
+          "red04": "#A72037",
+          "red06": "#C4314B",
+          "red08": "#F3D6D8",
+          "white": "#FFFFFF",
+          "yellow": "#F8D22A",
+        },
+        "transparent": "transparent",
+      },
+      "css": [Function],
+      "font": Object {
+        "sizes": Object {
+          "base": Object {
+            "fontSize": "0.875rem",
+            "lineHeight": "1.25rem",
+          },
+          "caption": Object {
+            "fontSize": "0.75rem",
+            "lineHeight": "1rem",
+          },
+          "title": Object {
+            "fontSize": "1.5rem",
+            "lineHeight": "2rem",
+          },
+          "title2": Object {
+            "fontSize": "1.125rem",
+            "lineHeight": "1.5rem",
+          },
+          "xsmall": Object {
+            "fontSize": "0.625rem",
+            "lineHeight": "0.6875rem",
+          },
+        },
+        "weights": Object {
+          "bold": Object {
+            "fontFamily": "'Segoe UI Bold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif",
+            "fontWeight": 700,
+          },
+          "regular": Object {
+            "fontFamily": "'Segoe UI', Tahoma, Helvetica, Sans-Serif",
+            "fontWeight": 400,
+          },
+          "semibold": Object {
+            "fontFamily": "'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif",
+            "fontWeight": 600,
+          },
+          "semilight": Object {
+            "fontFamily": "'Segoe UI Light', 'Segoe UI', Tahoma, Helvetica, Sans-Serif",
+            "fontWeight": 300,
+          },
+        },
+      },
+      "rem": [Function],
+      "spacing": Object {
+        "base": "1rem",
+        "large": "1.25rem",
+        "small": "0.75rem",
+        "xLarge": "1.5rem",
+        "xSmall": "0.5rem",
+        "xxLarge": "1.75rem",
+        "xxSmall": "0.25rem",
+        "xxxLarge": "2rem",
+        "xxxSmall": "0.125rem",
+      },
+      "style": 0,
+    }
+  }
+>
+  <Component>
+    <Component>
+      <Component>
+        <div
+          style={
+            Object {
+              "fontFamily": "'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif",
+              "fontSize": "1.5rem",
+              "fontWeight": 600,
+              "lineHeight": "2rem",
+            }
+          }
+        >
+          lookup configuration
+        </div>
+      </Component>
+      <Component>
+        <div
+          style={
+            Object {
+              "fontSize": "0.875rem",
+              "lineHeight": "1.25rem",
+              "marginBottom": "0.875rem",
+              "marginTop": "0.875rem",
+            }
+          }
+        >
+          <Component
+            label="On or off?"
+            onChecked={[Function]}
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "fontSize": "0.875rem",
+              "lineHeight": "1.25rem",
+              "marginBottom": "0.875rem",
+              "marginTop": "0.875rem",
+            }
+          }
+        >
+          <Component
+            onClick={[Function]}
+          >
+            OK
+          </Component>
+        </div>
+      </Component>
+      <Component>
+        <div
+          style={
+            Object {
+              "fontSize": "0.625rem",
+              "lineHeight": "0.6875rem",
+            }
+          }
+        >
+          (C) Copyright Bill Bliss
+        </div>
+      </Component>
+    </Component>
+  </Component>
+</ContextProvider>
+`;

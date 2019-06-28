@@ -2,7 +2,7 @@ import { debug } from "debug";
 import { PreventIframe } from "express-msteams-host";
 import { MessagingExtensionQuery, MessagingExtensionResult } from "botbuilder-teams";
 import { IMessagingExtensionMiddlewareProcessor } from "botbuilder-teams-messagingextensions";
-import { ResultsProvider } from "../resultsProviders/resultsProvider";
+import { ResultsProvider } from "../resultsProviders/ResultsProvider";
 
 // Initialize debug logging module
 const log = debug("msteams");

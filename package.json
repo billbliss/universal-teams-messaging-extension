@@ -2,11 +2,15 @@
   "name": "universal-teams-messaging-extension",
   "version": "0.0.5",
   "description": "A data-driven approach for Microsoft Teams messaging extensions.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/billbliss/universal-teams-messaging-extension.git"
+  },
   "scripts": {
     "start": "node ./dist/server.js",
     "build": "gulp build",
     "debug": "gulp serve --debug",
-    "test": "jest",
+    "test": "jest --verbose",
     "coverage": "jest --coverage"
   },
   "dependencies": {
@@ -99,6 +103,9 @@
     ],
     "coverageReporters": [
       "text"
-    ]
+    ],
+    "globals": {
+      "global": true
+    }
   }
 }
