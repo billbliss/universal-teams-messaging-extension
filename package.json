@@ -57,7 +57,7 @@
     "react-dom": "^16.8.4",
     "request": "2.88.0",
     "request-promise-lite": "^0.15.0",
-    "sanitize-html": "^1.20.1",
+    "sanitize-html": "^2.3.2",
     "stjs": "0.0.5",
     "ts-loader": "5.3.3",
     "tslint": "^5.11.0",
